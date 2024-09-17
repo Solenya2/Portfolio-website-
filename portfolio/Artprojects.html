@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script>
+    Weglot.initialize({
+        api_key: 'wg_fff764eb105d9fa1e8f06c012f22674a4'
+    });
+</script>
+<head>
+  <meta charset="UTF-8">
+  <title>Art Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Lightbox CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    integrity="sha512-tH2VzHy4zUjR6YvDh+nSZM3kS16N13bZxTeXx3rUn1V9NHwgbeHSOqXgNRLczBRKwv0B9bd9e8tvsB5bUO8ngA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-p6IuZ0tyY1UL0po9uX0Dqn+JpBbQ7h5e4cZ0XkXqJDXbX0Ft4vVn6N2jQ3XGq4O2e3IkVtJyg8ScKaV1q7w/3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- AOS CSS (optional for animations) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-puF4SgRKw58uwyl9iQvjeG7+1pSmbV3UoGq4xMnXz9zqjdV5Oas6U1pYIh38+mxvOAXpGJxE6wH8L1mxY6QX5g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Custom CSS -->
+  <style>
+    /* Custom Styles */
+
+    /* Adjust the hero section */
+    #hero {
+      color: white;
+      text-shadow: 1px 1px 2px black;
+      min-height: 100vh;
+      background-image: url('hero-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar adjustments */
+    .navbar-brand {
+      font-weight: bold;
+    }
+
+    /* Section headings */
+    section h2 {
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    /* Footer icons hover effect */
+    footer a {
+      color: white;
+      transition: color 0.2s;
+    }
+
+    footer a:hover {
+      color: #0d6efd; /* Bootstrap primary color */
+    }
+
+    /* Gallery image hover effect */
+    #art img, #design img {
+      transition: transform 0.2s;
+    }
+
+    #art img:hover, #design img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Noah Hereid</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="Portfolio.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Artprojects.html">Art</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="programingprojects.html">Programing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Aboutmebetter.html">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactPage.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container text-center text-white">
+      <h1>Welcome to My Portfolio</h1>
+      <p class="lead">Art, Design, and 3D Projects</p>
+      <a href="#art" class="btn btn-primary btn-lg mt-3">Explore My Work</a>
+    </div>
+  </section>
+
+  <!-- About Me Section (Optional) -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center">About Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <p>
+            <!-- Introduce yourself here -->
+            Hii my names noah and here you can find my favorite Art/3d projects ive made
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Art Gallery Section -->
+  <section id="art" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Art Gallery</h2>
+      <p class="lead text-center">A collection of my artwork.</p>
+      <div class="row">
+        <!-- Art Item 1 -->
+        <div class="col-md-4 mb-4">
+          <a href="apFake Energy drink" data-lightbox="art-gallery" data-title="Art Title 1">
+            <img src="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\prniteble energy.png" class="img-fluid" alt="Art 1">
+          </a>
+        </div>
+        <!-- Art Item 2 -->
+        <div class="col-md-4 mb-4">
+          <a href="Fake company car" data-lightbox="art-gallery" data-title="Art Title 2">
+            <img src="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\printabrld car.png" class="img-fluid" alt="Art 2">
+          </a>
+        </div>
+        <!-- Art Item 3 -->
+        <div class="col-md-4 mb-4">
+          <a href="Fakeapp" data-lightbox="art-gallery" data-title="Art Title 3">
+            <img src="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\app store prntable.png" class="img-fluid" alt="Art 3">
+          </a>
+        </div>
+        <!-- Add more art items as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Portfolio Section -->
+  <section id="design" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Design Portfolio</h2>
+      <p class="lead text-center">Showcasing my design projects.</p>
+      <div class="row">
+        <!-- Design Item 1 -->
+        <div class="col-md-4 mb-4">
+          <a href="axolothel" data-lightbox="design-gallery" data-title="Design Title 1">
+            <img src="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\all hotoshop\water bulb axothol\axolothel in a bulb.png" class="img-fluid" alt="Design 1">
+          </a>
+        </div>
+        <!-- Design Item 2 -->
+        <div class="col-md-4 mb-4">
+          <a href="bookthingy" data-lightbox="design-gallery" data-title="Design Title 2">
+            <img src="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\all hotoshop\book stuuff water grass\book and grass stuff.png" class="img-fluid" alt="Design 2">
+          </a>
+        </div>
+        <!-- Design Item 3 -->
+        <div class="col-md-4 mb-4">
+          <a href="dablackpearltapped" data-lightbox="design-gallery" data-title="Design Title 3">
+            <img src="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\all hotoshop\boat in a cup\boat in a cup.png" class="img-fluid" alt="Design 3">
+          </a>
+        </div>
+        <!-- Add more design items as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D Projects Section -->
+  <section id="3d-projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">3D Projects</h2>
+      <p class="lead text-center">Unity and Unreal Engine Creations.</p>
+      <div class="row">
+        <!-- Project 1 -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\roomunity.jpg" class="card-img-top" alt="3D Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Room design</h5>
+              <p class="card-text">A world i made in unity</p>
+              <a href="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\pictures\VR Room noah - NOAH ROOM - Windows, Mac, Linux - Unity 2022.3.20f1 _DX11_ 2024-06-03 09-23-29.mp4" class="btn btn-primary" target="_blank">Watch Video</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\aifollowunreal.jpg" class="card-img-top" alt="3D Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Unreal Engine 2</h5>
+              <p class="card-text">Ai that can follow and run after you</p>
+              <a href="C:\Users\NoahMathiasLantonHer\OneDrive - Informasjonsteknologi og Medieproduksjon\MegApp\Photos\unreal engine running ai .mp4" class="btn btn-primary" target="_blank">Watch Video</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Get in Touch</h2>
+      <p class="lead text-center">Feel free to reach out for collaborations or inquiries.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label"
+                >Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="_replyto"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label"
+                >Message</label
+              >
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark text-white">
+    <div class="container text-center">
+      <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+      <div>
+        <a href="https://linkedin.com/in/yourprofile" class="text-white me-3">
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <a href="https://github.com/yourusername" class="text-white me-3">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+        <a href="mailto:youremail@example.com" class="text-white">
+          <i class="fas fa-envelope fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Lightbox JS -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"
+    integrity="sha512-VrQDzB1YcLptUEiPJjygbQUhn3xVH/GsYmb4ZZ6EA1n2Y2+luAG6Zd5xaqO4B8D+P0Yk6C3AlVtyDbj5x3fXdg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <!-- AOS JS (optional for animations) -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-YZ7XkFsaUx69ZmZB1Hty16U+YMQngCNLv5gzQ8GICJ6FqFb+eoqZ88wSW/AGZGxnL/5wBw1rQ3am0rXQk5mHIQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

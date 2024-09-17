@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script>
+    Weglot.initialize({
+        api_key: 'wg_fff764eb105d9fa1e8f06c012f22674a4'
+    });
+</script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Me - My Interests, Hobbies, Work, and Education">
+  <title>About Me</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+    }
+
+    h1, h2 {
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    #hero {
+      height: 80vh;
+      background: url('https://images.unsplash.com/photo-1557682250-35f8c07b6e15') no-repeat center center/cover;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: none;
+    }
+
+    #hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    #hero p {
+      font-size: 1.2rem;
+      color: black;
+    }
+
+    /* Section Styling */
+    .section-heading {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    /* What I Like Section */
+    #what-i-like .icon-box {
+      text-align: center;
+      padding: 30px;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    #what-i-like .icon-box:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Hobby Section */
+    #hobbies {
+      text-align: center;
+    }
+
+    /* Work and School Section */
+    #work, #school {
+      background-color: white;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .timeline {
+      list-style: none;
+      padding: 0;
+      position: relative;
+    }
+
+    .timeline:before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background: #007bff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 20px 40px;
+      box-sizing: border-box;
+    }
+
+    .timeline-item:nth-child(odd) {
+      left: 0;
+    }
+
+    .timeline-item:nth-child(even) {
+      left: 50%;
+    }
+
+    .timeline-item:before {
+      content: ' ';
+      position: absolute;
+      top: 20px;
+      right: -20px;
+      border-style: solid;
+      border-width: 10px;
+      border-color: transparent transparent transparent #007bff;
+    }
+
+    .timeline-item:nth-child(even):before {
+      left: -20px;
+      right: auto;
+      border-color: transparent #007bff transparent transparent;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Portfolio.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Artprojects.html">Art</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="programingprojects.html">Porgraming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Aboutmebetter.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactPage.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container text-center">
+      <h1>About Me</h1>
+      <p>A little info about me.</p>
+    </div>
+  </section>
+
+  <!-- What I Like Section -->
+  <section id="what-i-like" class="py-5">
+    <div class="container">
+      <h2 class="section-heading">What I Like</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="icon-box p-4">
+            <i class="fas fa-laptop-code fa-3x mb-3"></i>
+            <h4>Learning</h4>
+            <p>I enjoy learning new things about AI, games, news, and mythology.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="icon-box p-4">
+            <i class="fas fa-gamepad fa-3x mb-3"></i>
+            <h4>Animals</h4>
+            <p>I love animals, especially my guinea pigs Jormungandr and Fenris. I also have two dogs that I like a lot (when they don't cause chaos!).</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="icon-box p-4">
+            <i class="fas fa-palette fa-3x mb-3"></i>
+            <h4>Art & Design</h4>
+            <p>Drawing, 3D, making models and assets for my games or others.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies Section -->
+  <section id="hobbies" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-heading">Hobbies</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 d-flex align-items-center justify-content-center">
+          <div>
+            <h3>Coding & Game Development</h3>
+            <p>I love spending time on personal projects like tutorials, games, and AIs. I also enjoy researching and learning about new things like OpenAI's new models.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <section id="work" class="py-5">
+    <div class="container">
+      <h2 class="section-heading">Work Experience</h2>
+      <div id="work-experience">
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4>Praksisplass - Steinarskogen Barnehage (2023-2024)</h4>
+            <p>Worked with taking care of the children among other duties.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Praksisplass - RamBase (2024-2025)</h4>
+            <p>Participated in software development projects and worked closely with a talented team to improve backend systems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- School Section -->
+  <section id="school" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-heading">Education</h2>
+      <div id="school-education">
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4>Haugaland VGS (2023 - Present)</h4>
+            <p>Currently studying IT.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Self-Learning (Ongoing)</h4>
+            <p>Constantly improving my skills through online courses, tutorials, and personal projects in game development, web design, and software engineering.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
